@@ -18,7 +18,61 @@ The objective of this project was to analyze sales performance across customers,
 
 ---
 
-## 3. Data Preparation & Cleaning
+##  3. Data Architecture
+
+The project follows a Star Schema data model for efficient reporting and analysis in Power BI.
+
+### Fact Table
+- **transactions**
+  - Contains transactional sales data such as:
+    - product_code
+    - customer_code
+    - market_code
+    - order_date
+    - sales_qty
+    - sales_amount
+    - cost_price
+    - profit_margin
+    - profit_margin_percent
+
+### Dimension Tables
+
+#### customers
+Contains customer-related information:
+- customer_code
+- customer_name
+- customer_type
+
+#### products
+Contains product-related information:
+- product_code
+- product_type
+
+#### markets
+Contains market and regional information:
+- markets_code
+- markets_name
+- zone
+
+#### date
+Date dimension table used for time intelligence analysis:
+- date
+- year
+- month_name
+- quarter
+
+### Relationships
+- transactions[customer_code] → customers[customer_code]
+- transactions[product_code] → products[product_code]
+- transactions[market_code] → markets[markets_code]
+- transactions[order_date] → date[date]
+
+### Data Flow
+MySQL Database → Power BI Power Query → Data Modeling → DAX Measures → Interactive Dashboard
+
+---
+
+## 4. Data Preparation & Cleaning
 
 The following data preparation activities were performed:
 
@@ -35,7 +89,7 @@ The following data preparation activities were performed:
 
 ---
 
-## 4. Key KPIs
+## 5. Key KPIs
 
 | KPI                  | Value   |
 | -------------------- | ------- |
@@ -46,7 +100,7 @@ The following data preparation activities were performed:
 
 ---
 
-## 5. Key Business Insights
+## 6. Key Business Insights
 
 ### Revenue Trends
 
@@ -78,7 +132,7 @@ The following data preparation activities were performed:
 
 ---
 
-## 6. Recommendations
+## 7. Recommendations
 
 * Focus on improving revenue growth in declining years.
 * Increase profitability in low-margin markets.
@@ -88,6 +142,6 @@ The following data preparation activities were performed:
 
 ---
 
-## 7. Conclusion
+## 8. Conclusion
 
 The dashboard provides a centralized and interactive reporting solution that helps management monitor sales performance, identify profitable markets and products, and make informed business decisions using data-driven insights.
