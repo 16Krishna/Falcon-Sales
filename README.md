@@ -165,5 +165,3 @@ The following data preparation activities were performed:
 
 <img width="1332" height="752" alt="image" src="https://github.com/user-attachments/assets/cfd7ffad-9196-4211-b61d-abe41d16f3f5" />
 
-
-The dashboard provides a centralized and interactive reporting solution that helps management monitor sales performance, identify profitable markets and products, and make informed business decisions using data-driven insights.
