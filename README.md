@@ -3,13 +3,32 @@ Sales Insights Dashboard – Business Insights Report
 
 # Sales Insights Dashboard – Business Insights Report
 
-## 1. Project Overview
+## 1. Business Problem Statement
+
+The sales organization was experiencing a decline in overall business performance, creating concerns among leadership regarding revenue growth and profitability. Decision-makers lacked a centralized reporting system and relied on multiple disconnected Excel files to analyze sales performance.
+
+As a result:
+
+* Business users spent significant time consolidating data from different sources.
+* Reports were inconsistent across teams, leading to confusion and delays in decision-making.
+* Management lacked visibility into key performance indicators such as revenue, sales quantity, profit, and profit margin.
+* It was difficult to identify underperforming markets, products, and customer segments.
+
+The Sales Director required a single, interactive dashboard capable of providing concise and actionable insights to answer critical business questions:
+
+* What are the current sales, revenue, profit, and profit margin figures?
+* Which markets are driving the highest revenue and profitability?
+* Which products contribute the most to overall business performance?
+* Which customer segments generate the highest revenue?
+* What trends can be observed over time?
+
+## 2. Project Overview
 
 The objective of this project was to analyze sales performance across customers, markets, and product categories using Power BI and MySQL. The dashboard helps stakeholders monitor revenue trends, profitability, customer contribution, and market performance to support data-driven decision-making.
 
 ---
 
-## 2. Tools & Technologies Used
+## 3. Tools & Technologies Used
 
 * MySQL
 * Power BI
@@ -18,7 +37,7 @@ The objective of this project was to analyze sales performance across customers,
 
 ---
 
-##  3. Data Architecture
+##  4. Data Architecture
 
 The project follows a Star Schema data model for efficient reporting and analysis in Power BI.
 
@@ -72,7 +91,7 @@ MySQL Database → Power BI Power Query → Data Modeling → DAX Measures → I
 
 ---
 
-## 4. Data Preparation & Cleaning
+## 5. Data Preparation & Cleaning
 
 The following data preparation activities were performed:
 
@@ -89,7 +108,7 @@ The following data preparation activities were performed:
 
 ---
 
-## 5. Key KPIs
+## 6. Key KPIs
 
 | KPI                  | Value   |
 | -------------------- | ------- |
@@ -100,7 +119,7 @@ The following data preparation activities were performed:
 
 ---
 
-## 6. Key Business Insights
+## 7. Key Business Insights
 
 ### Revenue Trends
 
@@ -132,7 +151,7 @@ The following data preparation activities were performed:
 
 ---
 
-## 7. Recommendations
+## 8. Recommendations
 
 * Focus on improving revenue growth in declining years.
 * Increase profitability in low-margin markets.
@@ -142,6 +161,9 @@ The following data preparation activities were performed:
 
 ---
 
-## 8. Conclusion
+## 9. Screenshots
+
+<img width="1332" height="752" alt="image" src="https://github.com/user-attachments/assets/cfd7ffad-9196-4211-b61d-abe41d16f3f5" />
+
 
 The dashboard provides a centralized and interactive reporting solution that helps management monitor sales performance, identify profitable markets and products, and make informed business decisions using data-driven insights.
